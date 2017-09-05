@@ -5065,6 +5065,12 @@ public final class Settings {
         public static final String LOCKSCREEN_STATUS_BAR = "lockscreen_status_bar";
 
         /**
+        * Whether to enable or disable vibration during calls
+        * @hide
+        */
+        public static final String INCALL_FEEDBACK_VIBRATE = "incall_feeedback_vibrate";
+
+        /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
          *
@@ -5226,6 +5232,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK);
             PRIVATE_SETTINGS.add(HIGH_TOUCH_SENSITIVITY_ENABLE);
             PRIVATE_SETTINGS.add(ACCELEROMETER_ROTATION_ANGLES);
+            PRIVATE_SETTINGS.add(INCALL_FEEDBACK_VIBRATE);
         }
 
        /**
