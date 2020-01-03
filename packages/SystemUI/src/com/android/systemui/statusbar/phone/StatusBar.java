@@ -1101,6 +1101,8 @@ public class StatusBar extends SystemUI implements DemoMode,
         ThreadedRenderer.overrideProperty("ambientRatio", String.valueOf(1.5f));
 
         mFlashlightController = Dependency.get(FlashlightController.class);
+        mKeyguardStatusBar = mStatusBarWindow.findViewById(R.id.keyguard_header);
+        updateHideNotchStatus();
     }
 
     public void updateBlurVisibility() {
@@ -2365,6 +2367,7 @@ public class StatusBar extends SystemUI implements DemoMode,
         mLightBarController.onSystemUiVisibilityChanged(fullscreenStackVis, dockedStackVis,
                 mask, fullscreenStackBounds, dockedStackBounds, sbModeChanged, mStatusBarMode,
                 navbarColorManagedByIme);
+        updateHideNotchStatus();
     }
 
     protected final int getSystemUiVisibility() {
@@ -4022,6 +4025,9 @@ public class StatusBar extends SystemUI implements DemoMode,
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.DOUBLE_TAP_SLEEP_LOCKSCREEN),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.HIDE_NOTCH),
+                    false, this, UserHandle.USER_ALL);
         }
 
         @Override
@@ -4031,7 +4037,23 @@ public class StatusBar extends SystemUI implements DemoMode,
 
         public void update() {
             setStatusDoubleTapToSleep();
+            updateHideNotchStatus();
         }
+    }
+
+    public void updateHideNotchStatus() {
+        if (mStatusBarView != null && mKeyguardStatusBar != null && hideNotch()) {
+            mStatusBarView.setBackgroundColor(0xFF000000);
+            mKeyguardStatusBar.setBackgroundColor(0xFF000000);
+        } else if (mStatusBarView != null && mKeyguardStatusBar != null) {
+            mStatusBarView.setBackgroundColor(Color.TRANSPARENT);
+            mKeyguardStatusBar.setBackgroundColor(Color.TRANSPARENT);
+        }
+    }
+
+    private boolean hideNotch() {
+        return Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.HIDE_NOTCH, 0) != 0;
     }
 
     private void setStatusDoubleTapToSleep() {
