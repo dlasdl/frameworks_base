@@ -5118,6 +5118,15 @@ public final class Settings {
         private static final Validator STATUS_BAR_CUSTOM_HEADER_HEIGHT_VALIDATOR = ANY_INTEGER_VALIDATOR;
 
         /**
+         * Whether to use new QS panel bg tint or not
+         * @hide
+         */
+        public static final String QS_PANEL_BG_USE_NEW_TINT = "qs_panel_bg_use_new_tint";
+
+        /** @hide */
+        private static final Validator QS_PANEL_BG_USE_NEW_TINT_VALIDATOR = BOOLEAN_VALIDATOR;
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -5221,7 +5230,8 @@ public final class Settings {
             STATUS_BAR_CUSTOM_HEADER_PROVIDER,
             STATUS_BAR_CUSTOM_HEADER_IMAGE,
             STATUS_BAR_FILE_HEADER_IMAGE,
-            STATUS_BAR_CUSTOM_HEADER_HEIGHT
+            STATUS_BAR_CUSTOM_HEADER_HEIGHT,
+            QS_PANEL_BG_USE_NEW_TINT
         };
 
         /**
@@ -5388,6 +5398,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(STATUS_BAR_CUSTOM_HEADER_IMAGE);
             PRIVATE_SETTINGS.add(STATUS_BAR_FILE_HEADER_IMAGE);
             PRIVATE_SETTINGS.add(STATUS_BAR_CUSTOM_HEADER_HEIGHT);
+            PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_NEW_TINT);
         }
 
         /**
@@ -5538,6 +5549,7 @@ public final class Settings {
                     STATUS_BAR_FILE_HEADER_IMAGE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_CUSTOM_HEADER_HEIGHT,
                     STATUS_BAR_CUSTOM_HEADER_HEIGHT_VALIDATOR);
+            VALIDATORS.put(QS_PANEL_BG_USE_NEW_TINT, QS_PANEL_BG_USE_NEW_TINT_VALIDATOR);
         }
 
         /**
