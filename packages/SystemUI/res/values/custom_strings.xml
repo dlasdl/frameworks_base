@@ -94,5 +94,8 @@
 
     <!-- QS Header data usage info -->
     <string name="usage_data">used</string>
+
+    <!-- Oroño clock -->
+    <string name="date_long_title_today">Today is %s</string>
 </resources>
 
