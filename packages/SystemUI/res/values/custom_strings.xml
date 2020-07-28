@@ -70,14 +70,6 @@
     <string name="keyguard_indication_dash_charging_time">Dash Charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> until full)</string>
     <string name="keyguard_plugged_in_dash_charging">Dash Charging</string>
 
-    <!-- Lockscreen Charging -->
-    <string name="tuner_keyguard_show_watt_title">Show charging watt</string>
-    <string name="tuner_keyguard_show_watt_summary">Show charging watt value in mW</string>
-    <string name="tuner_keyguard_show_current_title">Show charging current</string>
-    <string name="tuner_keyguard_show_current_summary">Show charging current values</string>
-    <string name="tuner_keyguard_show_battery_temp_title">Show battery temperature</string>
-    <string name="tuner_keyguard_show_battery_temp_summary">Show battery temperature value</string>
-
     <!--Screenrecord Tile-->
     <string name="screenrecorder_title_tile">Screenrecord</string>
 
