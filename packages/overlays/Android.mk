@@ -65,6 +65,7 @@ LOCAL_REQUIRED_MODULES := \
         AccentColoriOSBlueOverlay \
 	FontNotoSerifSourceOverlay \
 	FontArvoLatoOverlay \
+        FontArbutusSourceOverlay \
 	IconPackCircularAndroidOverlay \
 	IconPackCircularLauncherOverlay \
 	IconPackCircularSettingsOverlay \
