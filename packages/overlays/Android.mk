@@ -64,6 +64,7 @@ LOCAL_REQUIRED_MODULES := \
 	DisplayCutoutEmulationWaterfallOverlay \
         AccentColoriOSBlueOverlay \
 	FontNotoSerifSourceOverlay \
+	FontArvoLatoOverlay \
 	IconPackCircularAndroidOverlay \
 	IconPackCircularLauncherOverlay \
 	IconPackCircularSettingsOverlay \
