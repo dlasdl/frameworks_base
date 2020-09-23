@@ -97,5 +97,8 @@
 
     <!-- Oroño clock -->
     <string name="date_long_title_today">Today is %s</string>
+
+    <!-- Icon tuner -->
+    <string name="statusbar_items_title">Icon tuner</string>
 </resources>
 
