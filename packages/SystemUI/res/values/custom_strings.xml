@@ -95,5 +95,7 @@
     <string name="applock_credential">&#160;to unlock</string>
     <string name="applock_unlock">Unlock</string>
 
+    <!-- QS Header data usage info -->
+    <string name="usage_data">used</string>
 </resources>
 
