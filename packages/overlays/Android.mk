@@ -59,7 +59,7 @@ LOCAL_REQUIRED_MODULES := \
 	AccentColorTangerineOverlay \
 	DisplayCutoutEmulationCornerOverlay \
 	DisplayCutoutEmulationDoubleOverlay \
-    DisplayCutoutEmulationHoleOverlay \
+        DisplayCutoutEmulationHoleOverlay \
 	DisplayCutoutEmulationTallOverlay \
 	DisplayCutoutEmulationWaterfallOverlay \
         AccentColoriOSBlueOverlay \
@@ -67,6 +67,9 @@ LOCAL_REQUIRED_MODULES := \
 	FontArvoLatoOverlay \
         FontArbutusSourceOverlay \
 	FontRubikRubikOverlay \
+        FontKaiOverlay \
+        FontSamOverlay \
+        FontVictorOverlay \
 	IconPackCircularAndroidOverlay \
 	IconPackCircularLauncherOverlay \
 	IconPackCircularSettingsOverlay \
