@@ -5022,9 +5022,15 @@ public final class Settings {
          */
         public static final String VOLBTN_MUSIC_CONTROLS = "volbtn_music_controls";
 
+       /** 
+	* whether to enable or disable vibration on succesful fingerprint auth
+        * @hide
+        */
+       public static final String AUTHENTICATION_SUCCESS_VIB = "authentication_success_vib";
+
         /**
          * Force full screen for devices with cutout
-         * @hide
+	 * @hide
          */
         public static final String FORCE_FULLSCREEN_CUTOUT_APPS = "force_full_screen_cutout_apps";
 
@@ -5287,6 +5293,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(HIGH_TOUCH_SENSITIVITY_ENABLE);
             PRIVATE_SETTINGS.add(ACCELEROMETER_ROTATION_ANGLES);
             PRIVATE_SETTINGS.add(LOCKSCREEN_PIN_SCRAMBLE_LAYOUT);
+            PRIVATE_SETTINGS.add(AUTHENTICATION_SUCCESS_VIB);
         }
 
        /**
