@@ -16,4 +16,7 @@
     <!-- Whether device supports an alt. ambient display -->
     <java-symbol type="bool" name="config_alt_ambient_display"/>
 
+    <!-- Smart cutoff temperature -->
+    <java-symbol type="integer" name="config_smartCutoffTemperature" />
+    <java-symbol type="integer" name="config_smartCutoffResumeTemperature" />
 </resources>
