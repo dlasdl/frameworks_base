@@ -2695,4 +2695,7 @@ enum PageId {
 
     // Panel for Mobile Data
     PANEL_MOBILE_DATA = 2010;
+
+    // OS: R QPR2
+    BLUETOOTH_PAIRING_RECEIVER = 1851;
 }
