@@ -22,11 +22,18 @@
     android:layout_height="@dimen/qs_header_tooltip_height"
     android:layout_below="@id/quick_status_bar_system_icons"
     android:forceHasOverlappingRendering="false">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_gravity="center"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
         <TextClock
             android:textSize="55dp"
             android:textStyle="normal"
@@ -51,7 +58,21 @@
             android:layout_height="wrap_content"
             android:format12Hour="mm"
             android:format24Hour="mm" />
+
+       </LinearLayout>
+
+     <TextView
+        android:id="@+id/mydate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textSize="16dp"
+	android:layout_below="@id/textClock"/>
+
     </LinearLayout>
+
     <com.android.systemui.qs.QSHeaderInfoLayout
         android:id="@+id/status_container"
         android:visibility="invisible"

@@ -93,6 +93,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -140,6 +143,10 @@ public class QuickStatusBarHeader extends RelativeLayout implements
     private View mQuickQsStatusIcons;
     private View mHeaderTextContainerView;
 
+    private Calendar calendar;
+    private SimpleDateFormat dateFormat;
+    private String date;
+
     private int mRingerMode = AudioManager.RINGER_MODE_NORMAL;
     private AlarmManager.AlarmClockInfo mNextAlarm;
 
@@ -181,7 +188,7 @@ public class QuickStatusBarHeader extends RelativeLayout implements
         @Override
         public void onPrivacyItemsChanged(List<PrivacyItem> privacyItems) {
             mPrivacyChip.setPrivacyList(privacyItems);
-            setChipVisibility(!privacyItems.isEmpty());
+           setChipVisibility(!privacyItems.isEmpty());
         }
 
         @Override
@@ -268,6 +275,11 @@ public class QuickStatusBarHeader extends RelativeLayout implements
 
         // Set light text on the header icons because they will always be on a black background
         applyDarkness(R.id.clock, tintArea, 0, DarkIconDispatcher.DEFAULT_ICON_TINT);
+
+        TextView textView = findViewById(R.id.mydate);
+        SimpleDateFormat sdf = new SimpleDateFormat("EEE, MMM d");
+        String currentDateandTime = sdf.format(new Date());
+        textView.setText(currentDateandTime);
 
         // Set the correct tint for the status icons so they contrast
         mIconManager.setTint(fillColor);
