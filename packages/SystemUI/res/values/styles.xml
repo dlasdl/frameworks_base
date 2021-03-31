@@ -246,7 +246,7 @@
     <style name="TextAppearance.QS.Date">
         <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:textSize">21sp</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="TextAppearance.DeviceManagementDialog">
