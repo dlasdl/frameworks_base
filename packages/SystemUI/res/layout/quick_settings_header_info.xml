@@ -19,7 +19,7 @@
     android:id="@+id/header_text_container"
     android:visibility="invisible"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/qs_header_tooltip_height"
+    android:layout_height="60dp"
     android:layout_below="@id/quick_status_bar_system_icons"
     android:forceHasOverlappingRendering="false">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content">
 
         <TextClock
-            android:textSize="55dp"
+            android:textSize="40dp"
             android:textStyle="normal"
             android:textColor="?android:attr/colorAccent"
             android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
             android:format12Hour="hh"
             android:format24Hour="HH" />
         <TextClock
-            android:textSize="55dp"
+            android:textSize="40dp"
             android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:format12Hour=":"
             android:format24Hour=":" />
         <TextClock
-            android:textSize="55dp"
+            android:textSize="40dp"
             android:textStyle="normal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:text="Date"
         android:singleLine="true"
-        android:gravity="center"
+        android:gravity="start"
         android:textSize="16dp"
 	android:layout_below="@id/textClock"/>
 
