@@ -19,7 +19,7 @@
     android:id="@+id/header_text_container"
     android:visibility="invisible"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="85dp"
     android:layout_below="@id/quick_status_bar_system_icons"
     android:forceHasOverlappingRendering="false">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
