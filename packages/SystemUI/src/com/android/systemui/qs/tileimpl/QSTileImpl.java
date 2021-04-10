@@ -38,6 +38,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.VibrationEffect;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.service.quicksettings.Tile;
 import android.text.format.DateUtils;
 import android.util.ArraySet;
